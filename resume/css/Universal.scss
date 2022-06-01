@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    background-color: black;
+}
+
+// body {
+//     background-color: black;
+// }
+
+header {
+    background-color: rgb(52, 58, 64);
+    display: flex;
+    color: white;
+    font-size: 1.75rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 8px 6px -6px rgb(42, 41, 41);
+    z-index: 3;
+
+
+    div.job_title {
+        display: flex;
+        flex: 10 1 300px;
+        margin-left: 2rem;
+        align-items: center;
+
+        p {
+            font-size: 2rem;
+        }
+
+    }
+
+    nav {
+        flex: 1 1 800px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li:hover {
+                background-color: black;
+            }
+
+            li {
+                display: flex;
+                list-style-type: none;
+                transition: all 0.35s ease;
+
+                a {
+                    padding: 1.25rem;
+                    text-decoration: none;
+                    color: white;
+
+
+                }
+
+
+
+            }
+        }
+    }
+
+
+}
+
+main {
+    height: 90vh;
+}
+
+footer {
+
+    background-color: rgb(52, 58, 64);
+
+    div.statement {
+        padding: 1.5rem;
+        color: white;
+        text-align: center;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+
+            font-size: 1rem;
+
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width:1148px) {
+    header {
+        div.job_title {
+            margin-left: 0;
+            margin-bottom: 0.5rem;
+            justify-content: center;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        nav {
+            ul {
+                margin-right: 0;
+                justify-content: space-around;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:736px) {
+    header {
+        position: static;
+
+        div.job_title {
+            p {
+                padding: 0.5rem;
+                text-align: center;
+            }
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    footer {
+
+
+        div.statement {
+
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+
+                font-size: 0.75rem;
+
+
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,460 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.active {
+  background-color: black;
+}
+
+header {
+  background-color: #343a40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 1.75rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 0 8px 6px -6px #2a2929;
+          box-shadow: 0 8px 6px -6px #2a2929;
+  z-index: 3;
+}
+
+header div.job_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 10;
+      -ms-flex: 10 1 300px;
+          flex: 10 1 300px;
+  margin-left: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.job_title p {
+  font-size: 2rem;
+}
+
+header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 800px;
+          flex: 1 1 800px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li:hover {
+  background-color: black;
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+header nav ul li a {
+  padding: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main hr {
+  width: 100%;
+}
+
+main section.alldata section.information {
+  width: 75vw;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.alldata section.information div.photo_stickers {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.alldata section.information div.photo_stickers img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+main section.alldata section.information div.photo_stickers p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main section.alldata section.information div.text1 {
+  -webkit-box-flex: 13;
+      -ms-flex: 13 1 700px;
+          flex: 13 1 700px;
+  padding: 1rem 1.5rem;
+}
+
+main section.alldata section.information div.text1 p {
+  font-size: 1.25rem;
+}
+
+main section.alldata section.information div.text1 img {
+  margin-top: 0.5rem;
+  width: 3vw;
+  height: 3vw;
+  margin-right: 0.5rem;
+}
+
+main section.alldata section.data {
+  width: 75vw;
+  padding: 1rem;
+}
+
+main section.alldata section.data h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+main section.alldata section.data div.personal {
+  width: 90%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.alldata section.data div.personal div.data {
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+}
+
+main section.alldata section.data div.personal div.data span {
+  padding: 0.5rem;
+}
+
+main section.alldata section.data ul {
+  padding: 2rem;
+}
+
+main section.alldata section.data ul li {
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+main section.alldata section.data ul li span.school {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+main section.alldata section.data ul li span.year {
+  color: gray;
+  font-size: 1.25rem;
+}
+
+main section.alldata section.data ul li span.major {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+main section.alldata section.data div.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.alldata section.data div.skill hr {
+  margin-bottom: 1rem;
+}
+
+main section.alldata section.data div.skill div.skdata {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 450px;
+          flex: 1 1 450px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+main section.alldata section.data div.skill div.skdata ol {
+  margin: 0;
+}
+
+main section.alldata section.data div.skill div.skdata ol li {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+main section.alldata section.data div.skill div.skdata div.skimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.5rem;
+  width: 25%;
+}
+
+main section.alldata section.data div.skill div.skdata div.skimg img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.25rem;
+}
+
+main section.alldata section.data div.skill div.skdata div.skimg p {
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+footer div.statement {
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+footer div.statement h3 {
+  font-size: 2rem;
+}
+
+footer div.statement p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1290px) {
+  main section.alldata section.information div.photo_stickers {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.alldata section.information div.photo_stickers img {
+    width: 25vw;
+    height: 25vw;
+  }
+  main section.alldata section.information div.text1 {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  main section.alldata section.information div.text1 img {
+    margin-top: 1rem;
+    width: 7vw;
+    height: 7vw;
+    margin-right: 1rem;
+  }
+  main section.alldata section.data div.skill div.skdata {
+    padding: 0.75rem;
+  }
+  main section.alldata section.data div.skill div.skdata div.skimg {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  div.animation svg {
+    width: 15vw;
+    height: 15vw;
+  }
+  header div.job_title {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header div.job_title p {
+    text-align: center;
+  }
+  header nav ul {
+    margin-right: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main section.alldata section.information {
+    padding: 0;
+  }
+  main section.alldata section.information div.photo_stickers {
+    margin-top: 1.5rem;
+  }
+  main section.alldata section.data ul {
+    margin-left: 0rem;
+    padding: 1rem;
+  }
+  main section.alldata section.data div.personal {
+    margin-left: 0rem;
+    padding: 0;
+  }
+  main section.alldata section.data div.personal div.data {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 260px;
+            flex: 1 1 260px;
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  div.animation svg {
+    width: 15vw;
+    height: 15vw;
+  }
+  header {
+    position: static;
+  }
+  header div.job_title p {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section.alldata {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.alldata section.information {
+    width: 100%;
+  }
+  main section.alldata section.information div.photo_stickers img {
+    width: 50vw;
+    height: 50vw;
+  }
+  main section.alldata section.information div.text1 p {
+    font-size: 1.15rem;
+  }
+  main section.alldata section.information div.text1 img {
+    margin-top: 1rem;
+    width: 10vw;
+    height: 10vw;
+    margin-right: 1rem;
+  }
+  main section.alldata section.data {
+    width: 80%;
+    padding: 0;
+  }
+  main section.alldata section.data h1 {
+    text-align: center;
+  }
+  main section.alldata section.data div.personal {
+    padding: 1rem;
+    margin-left: 0;
+  }
+  main section.alldata section.data div.personal div.data span {
+    font-size: 1rem;
+  }
+  main section.alldata section.data ul {
+    margin-left: 0;
+  }
+  main section.alldata section.data ul li {
+    text-align: center;
+  }
+  main section.alldata section.data div.skill h1 {
+    width: 100%;
+  }
+  main section.alldata section.data div.skill div.skdata {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.alldata section.data div.skill div.skdata div.skimg p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  main section.alldata section.data div.skill div.skdata ol li {
+    font-size: 1rem;
+  }
+  footer div.statement h3 {
+    font-size: 1.5rem;
+  }
+  footer div.statement p {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

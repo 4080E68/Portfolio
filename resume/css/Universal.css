@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.active {
+  background-color: black;
+}
+
+header {
+  background-color: #343a40;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-size: 1.75rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 0 8px 6px -6px #2a2929;
+          box-shadow: 0 8px 6px -6px #2a2929;
+  z-index: 3;
+}
+
+header div.job_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 10;
+      -ms-flex: 10 1 300px;
+          flex: 10 1 300px;
+  margin-left: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header div.job_title p {
+  font-size: 2rem;
+}
+
+header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 800px;
+          flex: 1 1 800px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li:hover {
+  background-color: black;
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+header nav ul li a {
+  padding: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  height: 90vh;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+footer div.statement {
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+footer div.statement h3 {
+  font-size: 2rem;
+}
+
+footer div.statement p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1148px) {
+  header div.job_title {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header div.job_title p {
+    text-align: center;
+  }
+  header nav ul {
+    margin-right: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  header {
+    position: static;
+  }
+  header div.job_title p {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer div.statement h3 {
+    font-size: 1.5rem;
+  }
+  footer div.statement p {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=Universal.css.map */

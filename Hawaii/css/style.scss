@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 8px 6px -6px rgb(42, 41, 41);
+    z-index: 3;
+
+    .nav1 {
+        display: flex;
+        flex: 5 1 380px;
+        margin-left: 1rem;
+        align-items: center;
+
+        img {
+            width: 5vw;
+            height: 5vw;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .nav2 {
+        flex: 1 1 420px;
+
+        ul {
+            justify-content: space-around;
+            display: flex;
+            list-style-type: none;
+
+            li {
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+section.first {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Pictures/pexels-photo-416676.jpeg);
+    background-position: center;
+    background-size: cover;
+
+    .filter {
+        background-color: rgba(0, 0, 0, 0.4);
+        height: 75vh;
+        width: 100%;
+        position: absolute;
+
+    }
+
+    .backImage {
+        position: relative;
+        text-align: center;
+
+        h3 {
+            color: white;
+            font-size: 3rem;
+        }
+
+        button {
+            margin-top: 2rem;
+            padding: 1rem 1.55rem;
+            background-color: rgb(69, 214, 166);
+            border: none;
+            border-radius: 1rem;
+            font-size: 2.5rem;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+section.second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    span {
+        font-size: 1.75rem;
+        color: rgb(124, 195, 171);
+        font-weight: bolder;
+    }
+
+    div.cards {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        div.card {
+            flex: 1 1 220px;
+            margin-bottom: 1.5rem;
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            img {
+                border-radius: 15rem;
+                width: 20vw;
+                height: 20vw;
+            }
+
+            button {
+                margin-top: 0.8rem;
+                padding: 1rem 1.55rem;
+                background-color: rgb(69, 146, 214);
+                border: none;
+                border-radius: 1rem;
+                font-size: 1.5rem;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+}
+
+footer {
+    display: flex;
+    background-color: rgb(89, 91, 90);
+    color: white;
+    justify-content: center;
+
+    div.footers {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+
+        div.logo {
+            display: flex;
+            align-items: center;
+
+
+
+            img {
+                width: 4vw;
+                height: 4vw;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        div.footersecond {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            div.footer1 {
+                flex: 1 1 310px;
+                width: 50%;
+
+                p {
+                    font-size: 1.25rem;
+                }
+
+            }
+
+            div.footer2 {
+                display: flex;
+                flex: 1 1 260px;
+                width: 50%;
+                align-items: flex-end;
+
+                p {
+                    font-size: 1.25rem;
+                }
+
+                a {
+                    img {
+                        width: 4vw;
+                        height: 4vw;
+                        margin-right: 1.5rem;
+                    }
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+}
+
+@media screen and (max-width:1160px) {
+
+    //footer media
+    footer {
+        div.footers {
+            align-items: center;
+
+            div.logo {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+
+            div.footersecond {
+                div.footer1 {
+                    text-align: center;
+                }
+
+                div.footer2 {
+                    justify-content: center;
+
+                    a {
+                        img {
+                            width: 6vw;
+                            height: 6vw;
+                            margin-top: 0.75rem;
+
+                        }
+
+                    }
+                }
+
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width:810px) {
+    nav {
+        height: 13vh;
+
+        .nav1 {
+            margin-left: 0;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+    }
+
+    section.first {
+        .backImage {
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            button {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:690px) {
+    footer {
+        div.footers {
+            width: 80%;
+
+            div.logo {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            div.footersecond {
+                div.footer1 {
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                div.footer2 {
+                    a {
+                        img {
+                            width: 10vw;
+                            height: 10vw;
+                            margin-top: 0.75rem;
+
+                        }
+
+                    }
+                }
+
+            }
+        }
+
+
+
+
+    }
+}
+
+@media screen and (max-width:485px) {
+    section.first {
+        .backImage {
+            h3 {
+                font-size: 1.75rem;
+            }
+
+            button {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    section.second {
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        .cards {
+            margin-bottom: 1rem;
+
+            .card {
+                img {
+                    margin-top: 1.5rem;
+                    width: 50vw;
+                    height: 50vw;
+                }
+
+                button {
+                    font-size: 1.5rem;
+
+                }
+
+
+            }
+
+        }
+
+
+    }
+
+}

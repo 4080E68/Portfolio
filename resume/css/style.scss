@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    background-color: black;
+}
+
+// body {
+//     background-color: black;
+// }
+
+header {
+    background-color: rgb(52, 58, 64);
+    display: flex;
+    color: white;
+    font-size: 1.75rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 8px 6px -6px rgb(42, 41, 41);
+    z-index: 3;
+
+
+    div.job_title {
+        display: flex;
+        flex: 10 1 300px;
+        margin-left: 2rem;
+        align-items: center;
+
+        p {
+            font-size: 2rem;
+        }
+
+    }
+
+    nav {
+        flex: 1 1 800px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li:hover {
+                background-color: black;
+            }
+
+            li {
+                display: flex;
+                list-style-type: none;
+                transition: all 0.35s ease;
+
+                a {
+                    padding: 1.25rem;
+                    text-decoration: none;
+                    color: white;
+
+                }
+
+
+
+            }
+        }
+    }
+
+
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    hr {
+        width: 100%;
+    }
+
+    section.alldata {
+        // background-color: white;
+        // border-radius: 1%;
+        // width: 65vw;
+
+        section.information {
+
+            width: 75vw;
+            padding: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            div.photo_stickers {
+                flex: 1 1 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+
+            div.text1 {
+                flex: 13 1 700px;
+                padding: 1rem 1.5rem;
+
+                p {
+                    font-size: 1.25rem;
+
+                }
+
+                img {
+                    margin-top: 0.5rem;
+                    width: 3vw;
+                    height: 3vw;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+
+        section.data {
+            width: 75vw;
+            padding: 1rem;
+
+            h1 {
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+
+            div.personal {
+                width: 90%;
+                padding: 1.5rem;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                div.data {
+                    font-size: 1.25rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1 1 250px;
+
+                    span {
+                        padding: 0.5rem;
+                    }
+                }
+            }
+
+            ul {
+                padding: 2rem;
+
+                li {
+                    list-style-type: none;
+                    margin-top: 0.5rem;
+
+                    span.school {
+                        font-size: 2rem;
+                        font-weight: bolder;
+
+                    }
+
+                    span.year {
+                        color: gray;
+                        font-size: 1.25rem;
+                    }
+
+                    span.major {
+                        font-size: 1.25rem;
+
+                        font-weight: 500;
+                    }
+
+                }
+
+
+            }
+
+            div.skill {
+                display: flex;
+                flex-wrap: wrap;
+
+                hr {
+                    margin-bottom: 1rem;
+                }
+
+
+                div.skdata {
+                    flex: 1 1 450px;
+                    padding: 1rem;
+                    display: flex;
+                    width: 30%;
+
+                    ol {
+                        margin: 0;
+
+                        li {
+                            margin: 0;
+                            font-size: 1.15rem;
+                        }
+                    }
+
+                    div.skimg {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-right: 1.5rem;
+                        width: 25%;
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            margin-bottom: 0.25rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+//footer============================================================
+footer {
+
+    background-color: rgb(52, 58, 64);
+
+    div.statement {
+        padding: 1.5rem;
+        color: white;
+        text-align: center;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+
+            font-size: 1rem;
+
+
+        }
+
+    }
+
+}
+
+//RWD排版===========================================================
+@media screen and (max-width:1290px) {
+    main {
+        section.alldata {
+            section.information {
+                div.photo_stickers {
+                    justify-content: center;
+
+                    img {
+                        width: 25vw;
+                        height: 25vw;
+                    }
+                }
+
+                div.text1 {
+                    margin-top: 1rem;
+                    text-align: center;
+
+                    img {
+                        margin-top: 1rem;
+                        width: 7vw;
+                        height: 7vw;
+                        margin-right: 1rem;
+                    }
+
+                }
+
+            }
+
+            section.data {
+                div.skill {
+                    div.skdata {
+                        padding: 0.75rem;
+
+                        div.skimg {
+                            width: 15%;
+
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:1148px) {
+    div.animation {
+        svg {
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+
+    header {
+        div.job_title {
+            margin-left: 0;
+            margin-bottom: 0.5rem;
+            justify-content: center;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        nav {
+            ul {
+                margin-right: 0;
+                justify-content: space-around;
+            }
+        }
+    }
+
+    main {
+        section.alldata {
+            section.information {
+                padding: 0;
+
+                div.photo_stickers {
+                    margin-top: 1.5rem;
+                }
+            }
+
+            section.data {
+                ul {
+                    margin-left: 0rem;
+                    padding: 1rem;
+                }
+
+                div.personal {
+                    margin-left: 0rem;
+                    padding: 0;
+
+
+                    div.data {
+                        flex: 1 1 260px;
+                        font-size: 1.15rem;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:736px) {
+    div.animation {
+        svg {
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+
+    header {
+        position: static;
+
+        div.job_title {
+            p {
+                padding: 0.5rem;
+                text-align: center;
+            }
+        }
+
+        nav {
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+
+    main {
+
+        section.alldata {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            section.information {
+                width: 100%;
+                div.photo_stickers {
+                        img{
+                            width: 50vw;
+                            height: 50vw;
+                        }
+                    }
+
+                div.text1 {
+                    p {
+                        font-size: 1.15rem;
+                    }
+
+                    img {
+                        margin-top: 1rem;
+                        width: 10vw;
+                        height: 10vw;
+                        margin-right: 1rem;
+                    }
+
+                }
+
+            }
+
+            section.data {
+
+
+                width: 80%;
+                padding: 0;
+
+                h1 {
+                    text-align: center;
+                }
+
+                div.personal {
+                    padding: 1rem;
+                    margin-left: 0;
+
+
+                    div.data {
+
+
+                        span {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+
+                ul {
+                    margin-left: 0;
+
+                    li {
+                        text-align: center;
+                    }
+                }
+
+                div.skill {
+                
+                    h1 {
+                       width: 100%;
+                    }
+
+
+                    div.skdata {
+                        flex-direction: column;
+                        align-items: center;
+
+                        div.skimg {
+
+                            p {
+                                font-weight: 600;
+                                font-size: 1.5rem;
+                                margin-bottom: 0.5rem;
+                            }
+                        }
+
+                        ol {
+                            li {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    footer {
+
+
+        div.statement {
+
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            p {
+
+                font-size: 0.75rem;
+
+
+            }
+
+        }
+
+    }
+}

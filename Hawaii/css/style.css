@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0 8px 6px -6px #2a2929;
+          box-shadow: 0 8px 6px -6px #2a2929;
+  z-index: 3;
+}
+
+nav .nav1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 380px;
+          flex: 5 1 380px;
+  margin-left: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav1 img {
+  width: 5vw;
+  height: 5vw;
+}
+
+nav .nav1 h2 {
+  font-size: 2rem;
+}
+
+nav .nav2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+}
+
+nav .nav2 ul {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+nav .nav2 ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+section.first {
+  width: 100%;
+  height: 75vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../Pictures/pexels-photo-416676.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+section.first .filter {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 75vh;
+  width: 100%;
+  position: absolute;
+}
+
+section.first .backImage {
+  position: relative;
+  text-align: center;
+}
+
+section.first .backImage h3 {
+  color: white;
+  font-size: 3rem;
+}
+
+section.first .backImage button {
+  margin-top: 2rem;
+  padding: 1rem 1.55rem;
+  background-color: #45d6a6;
+  border: none;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+section.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+section.second h2 {
+  font-size: 1.75rem;
+}
+
+section.second span {
+  font-size: 1.75rem;
+  color: #7cc3ab;
+  font-weight: bolder;
+}
+
+section.second div.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+}
+
+section.second div.cards div.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 220px;
+          flex: 1 1 220px;
+  margin-bottom: 1.5rem;
+}
+
+section.second div.cards div.card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+section.second div.cards div.card p {
+  font-size: 1.1rem;
+}
+
+section.second div.cards div.card img {
+  border-radius: 15rem;
+  width: 20vw;
+  height: 20vw;
+}
+
+section.second div.cards div.card button {
+  margin-top: 0.8rem;
+  padding: 1rem 1.55rem;
+  background-color: #4592d6;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #595b5a;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.footers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+}
+
+footer div.footers div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.footers div.logo img {
+  width: 4vw;
+  height: 4vw;
+}
+
+footer div.footers div.logo h2 {
+  font-size: 2rem;
+}
+
+footer div.footers div.footersecond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+footer div.footers div.footersecond div.footer1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 310px;
+          flex: 1 1 310px;
+  width: 50%;
+}
+
+footer div.footers div.footersecond div.footer1 p {
+  font-size: 1.25rem;
+}
+
+footer div.footers div.footersecond div.footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 260px;
+          flex: 1 1 260px;
+  width: 50%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer div.footers div.footersecond div.footer2 p {
+  font-size: 1.25rem;
+}
+
+footer div.footers div.footersecond div.footer2 a img {
+  width: 4vw;
+  height: 4vw;
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 1160px) {
+  footer div.footers {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div.footers div.logo img {
+    width: 50px;
+    height: 50px;
+  }
+  footer div.footers div.logo h2 {
+    font-size: 2rem;
+  }
+  footer div.footers div.footersecond div.footer1 {
+    text-align: center;
+  }
+  footer div.footers div.footersecond div.footer2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer div.footers div.footersecond div.footer2 a img {
+    width: 6vw;
+    height: 6vw;
+    margin-top: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  nav {
+    height: 13vh;
+  }
+  nav .nav1 {
+    margin-left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  nav .nav1 img {
+    width: 45px;
+    height: 45px;
+  }
+  section.first .backImage h3 {
+    font-size: 2.5rem;
+  }
+  section.first .backImage button {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  footer div.footers {
+    width: 80%;
+  }
+  footer div.footers div.logo h2 {
+    font-size: 1.5rem;
+  }
+  footer div.footers div.footersecond div.footer1 p {
+    font-size: 1rem;
+  }
+  footer div.footers div.footersecond div.footer2 a img {
+    width: 10vw;
+    height: 10vw;
+    margin-top: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  section.first .backImage h3 {
+    font-size: 1.75rem;
+  }
+  section.first .backImage button {
+    font-size: 1.5rem;
+  }
+  section.second h2 {
+    font-size: 1.25rem;
+  }
+  section.second .cards {
+    margin-bottom: 1rem;
+  }
+  section.second .cards .card img {
+    margin-top: 1.5rem;
+    width: 50vw;
+    height: 50vw;
+  }
+  section.second .cards .card button {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
