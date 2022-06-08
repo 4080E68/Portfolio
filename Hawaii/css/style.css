@@ -6,7 +6,6 @@
 }
 
 nav {
-  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,9 +292,6 @@ footer div.footers div.footersecond div.footer2 a img {
 }
 
 @media screen and (max-width: 810px) {
-  nav {
-    height: 13vh;
-  }
   nav .nav1 {
     margin-left: 0;
     -webkit-box-pack: center;
