@@ -125,7 +125,7 @@ main section.alldata section.information div.photo_stickers {
 
 main section.alldata section.information div.photo_stickers img {
   width: 200px;
-  height: 200px;
+  height: 250px;
   border-radius: 50%;
   margin-bottom: 0.5rem;
 }
@@ -301,7 +301,7 @@ footer div.statement p {
   }
   main section.alldata section.information div.photo_stickers img {
     width: 25vw;
-    height: 25vw;
+    height: 30vw;
   }
   main section.alldata section.information div.text1 {
     margin-top: 1rem;
@@ -399,7 +399,7 @@ footer div.statement p {
   }
   main section.alldata section.information div.photo_stickers img {
     width: 50vw;
-    height: 50vw;
+    height: 60vw;
   }
   main section.alldata section.information div.text1 p {
     font-size: 1.15rem;

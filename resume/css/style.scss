@@ -96,10 +96,12 @@ main {
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                
 
                 img {
+
                     width: 200px;
-                    height: 200px;
+                    height: 250px;
                     border-radius: 50%;
                     margin-bottom: 0.5rem;
                 }
@@ -270,7 +272,7 @@ footer {
 
                     img {
                         width: 25vw;
-                        height: 25vw;
+                        height: 30vw;
                     }
                 }
 
@@ -415,7 +417,7 @@ footer {
                 div.photo_stickers {
                         img{
                             width: 50vw;
-                            height: 50vw;
+                            height: 60vw;
                         }
                     }
 

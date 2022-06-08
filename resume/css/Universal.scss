@@ -70,7 +70,98 @@ header {
 }
 
 main {
-    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: center;
+
+    section.data {
+        width: 80%;
+
+        h1 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        hr {
+            width: 99%;
+
+        }
+
+        section.end {
+            width: 80%;
+        }
+
+        div.cards {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            div.card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1 1 350px;
+                border: 1px solid gray;
+                margin-right: 1rem;
+                max-width: 40%;
+
+
+                hr {
+                    background-color: black;
+                    width: 90%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 16.5vw;
+                }
+
+                h2 {
+                    font-size: 1.75rem;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                    padding: 1rem;
+                }
+
+
+
+                div.text {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 1.3rem;
+                    width: 100%;
+
+                    button {
+                        margin-top: 1rem;
+                        padding: 1rem;
+                        background-color: #0d6efd;
+                        border: none;
+                        text-align: center;
+                        width: 130px;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 1rem;
+                            color: white;
+
+
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+
 }
 
 footer {
@@ -117,6 +208,30 @@ footer {
         }
     }
 
+    main {
+        section.data {
+            width: 100%;
+
+            section.end {
+                width: 80%;
+            }
+
+            div.cards {
+                div.card {
+                    flex: 1 1 230px;
+                    margin-right: 0.5rem;
+                    margin-bottom: 1rem;
+
+                    img {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
 }
 
 @media screen and (max-width:736px) {
@@ -137,21 +252,37 @@ footer {
         }
     }
 
+    main {
+        section.data {
+            width: 90%;
+
+            section.end {
+                width: 100%;
+            }
+
+            div.cards {
+                div.card {
+                    max-width: none;
+                    margin-bottom: 1rem;
+
+                    img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
     footer {
-
-
         div.statement {
-
-
             h3 {
                 font-size: 1.5rem;
             }
 
             p {
-
                 font-size: 0.75rem;
-
-
             }
 
         }
