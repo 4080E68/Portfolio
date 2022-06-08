@@ -131,8 +131,11 @@ main {
                     display: flex;
                     align-items: flex-start;
                     flex-direction: column;
+                    justify-content: space-between;
                     padding: 1.3rem;
                     width: 100%;
+                    min-height: 200px;
+
 
                     button {
                         margin-top: 1rem;

@@ -165,8 +165,12 @@ main section.data div.cards div.card div.text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 1.3rem;
   width: 100%;
+  min-height: 200px;
 }
 
 main section.data div.cards div.card div.text button {
