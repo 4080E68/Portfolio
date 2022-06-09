@@ -41,6 +41,7 @@ header div.job_title {
 
 header div.job_title p {
   font-size: 2rem;
+  margin-bottom: 0;
 }
 
 header nav {
@@ -56,10 +57,15 @@ header nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
 }
 
 header nav ul li:hover {
   background-color: black;
+}
+
+header nav ul li:hover a {
+  color: white;
 }
 
 header nav ul li {
@@ -89,6 +95,72 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main section.society {
+  min-height: 38vh;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section.society h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main section.society div.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #acacac;
+}
+
+main section.society div.info div.img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 460px;
+          flex: 1 1 460px;
+  border: 1px solid black;
+}
+
+main section.society div.info div.img img {
+  width: 100%;
+  height: 100%;
+}
+
+main section.society div.info div.text {
+  -webkit-box-flex: 8;
+      -ms-flex: 8 1 435px;
+          flex: 8 1 435px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+main section.society div.info div.text p {
+  margin-top: 0.5rem;
+  min-height: 200px;
+}
+
+main section.society div.info div.text button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #0d6efd;
+  border: none;
+  text-align: center;
+  width: 130px;
+}
+
+main section.society div.info div.text button a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
 }
 
 main section.data {
@@ -204,6 +276,7 @@ footer div.statement h3 {
 
 footer div.statement p {
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1148px) {
@@ -221,6 +294,24 @@ footer div.statement p {
     margin-right: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-left: 0;
+  }
+  main section.society {
+    width: 100%;
+  }
+  main section.society div.info div.img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+  }
+  main section.society div.info div.text {
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 330px;
+            flex: 3 1 330px;
+  }
+  main section.society div.info div.text p {
+    min-height: 60px;
+    font-size: 1.25rem;
   }
   main section.data {
     width: 100%;
@@ -234,6 +325,10 @@ footer div.statement p {
             flex: 1 1 230px;
     margin-right: 0.5rem;
     margin-bottom: 1rem;
+  }
+  main section.data div.cards div.card h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
   }
   main section.data div.cards div.card img {
     height: 150px;
@@ -254,6 +349,13 @@ footer div.statement p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  main section.society div.info div.img img {
+    min-height: 200px;
+  }
+  main section.society div.info div.text p {
+    font-size: 0.8rem;
+    min-height: 60px;
+  }
   main section.data {
     width: 90%;
   }
@@ -263,6 +365,9 @@ footer div.statement p {
   main section.data div.cards div.card {
     max-width: none;
     margin-bottom: 1rem;
+  }
+  main section.data div.cards div.card h2 {
+    font-size: 1.25rem;
   }
   main section.data div.cards div.card img {
     height: 200px;

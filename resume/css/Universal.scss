@@ -32,6 +32,7 @@ header {
 
         p {
             font-size: 2rem;
+            margin-bottom: 0;
         }
 
     }
@@ -42,9 +43,14 @@ header {
         ul {
             display: flex;
             justify-content: center;
+            margin-bottom: 0;
 
             li:hover {
                 background-color: black;
+
+                a {
+                    color: white;
+                }
             }
 
             li {
@@ -74,6 +80,70 @@ main {
     flex-direction: column;
     padding: 1.5rem;
     align-items: center;
+
+    section.society {
+        min-height: 38vh;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        div.info {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid rgb(172, 172, 172);
+
+            div.img {
+                flex: 1 1 460px;
+                border: 1px solid black;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+
+            div.text {
+                flex: 8 1 435px;
+                padding: 1rem;
+                font-size: 1.5rem;
+
+                p {
+                    margin-top: 0.5rem;
+
+
+                    min-height: 200px;
+                }
+
+                button {
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    background-color: #0d6efd;
+                    border: none;
+                    text-align: center;
+                    width: 130px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 1rem;
+                        color: white;
+
+
+
+                    }
+                }
+            }
+
+        }
+
+
+
+    }
 
     section.data {
         width: 80%;
@@ -183,6 +253,7 @@ footer {
         p {
 
             font-size: 1rem;
+            margin-bottom: 0;
 
 
         }
@@ -207,11 +278,32 @@ footer {
             ul {
                 margin-right: 0;
                 justify-content: space-around;
+                padding-left: 0;
             }
         }
     }
 
     main {
+        section.society{
+            
+            width: 100%;
+            div.info{
+                div.img{
+                    flex: 1 1 300px;
+
+                }
+                div.text{
+                    flex: 3 1 330px;
+                    
+                    p{
+                        min-height: 60px;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+
+
         section.data {
             width: 100%;
 
@@ -221,6 +313,11 @@ footer {
 
             div.cards {
                 div.card {
+                    h2 {
+                        font-size: 1rem;
+                        margin-bottom: 0;
+                    }
+
                     flex: 1 1 230px;
                     margin-right: 0.5rem;
                     margin-bottom: 1rem;
@@ -256,6 +353,26 @@ footer {
     }
 
     main {
+        section.society {
+            div.info {
+                div.img {
+                    img {
+                        min-height: 200px;
+                    }
+                }
+                div.text{
+                    p{
+                        font-size: 0.8rem;
+                        min-height: 60px;
+                    }
+                    
+                }
+
+            }
+
+
+        }
+
         section.data {
             width: 90%;
 
@@ -265,6 +382,10 @@ footer {
 
             div.cards {
                 div.card {
+                    h2 {
+                        font-size: 1.25rem;
+                    }
+
                     max-width: none;
                     margin-bottom: 1rem;
 
