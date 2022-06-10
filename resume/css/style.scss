@@ -86,7 +86,6 @@ main {
 
         section.information {
 
-            width: 85vw;
             padding: 1rem;
             display: flex;
             flex-wrap: wrap;
@@ -358,7 +357,7 @@ footer {
             }
 
             section.data {
-                width: 85vw;
+                
 
                 div.skill {
                     div.skdata {
@@ -418,6 +417,7 @@ footer {
     main {
         section.alldata {
             section.information {
+                width: 85vw;
                 padding: 0;
 
                 div.photo_stickers {
@@ -426,6 +426,7 @@ footer {
             }
 
             section.data {
+                width: 85vw;
                 ul {
                     margin-left: 0rem;
                     padding: 1rem;

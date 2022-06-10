@@ -95,7 +95,6 @@ main hr {
 }
 
 main section.alldata section.information {
-  width: 85vw;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,9 +380,6 @@ footer div.statement p {
     height: 7vw;
     margin-right: 1rem;
   }
-  main section.alldata section.data {
-    width: 85vw;
-  }
   main section.alldata section.data div.skill div.skdata {
     padding: 0.75rem;
   }
@@ -413,10 +409,14 @@ footer div.statement p {
         justify-content: space-around;
   }
   main section.alldata section.information {
+    width: 85vw;
     padding: 0;
   }
   main section.alldata section.information div.photo_stickers {
     margin-top: 1.5rem;
+  }
+  main section.alldata section.data {
+    width: 85vw;
   }
   main section.alldata section.data ul {
     margin-left: 0rem;
