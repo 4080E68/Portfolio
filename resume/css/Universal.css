@@ -114,6 +114,26 @@ main section.society h1 {
   margin-bottom: 0.5rem;
 }
 
+main section.society div.licenses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.society div.licenses div.license {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+  padding-left: 2rem;
+}
+
+main section.society div.licenses div.license p {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
 main section.society div.info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +141,7 @@ main section.society div.info {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border: 1px solid #acacac;
+  margin-top: 1rem;
 }
 
 main section.society div.info div.img {
@@ -313,6 +334,16 @@ footer div.statement p {
     min-height: 60px;
     font-size: 1.25rem;
   }
+  main section.society div.licenses div.license {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 350px;
+            flex: 1 1 350px;
+    padding-left: 0;
+  }
+  main section.society div.licenses div.license p {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
   main section.data {
     width: 100%;
   }
@@ -355,6 +386,16 @@ footer div.statement p {
   main section.society div.info div.text p {
     font-size: 0.8rem;
     min-height: 60px;
+  }
+  main section.society div.licenses div.license {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 350px;
+            flex: 1 1 350px;
+    padding-left: 0;
+  }
+  main section.society div.licenses div.license p {
+    padding: 1rem;
+    font-size: 1.25rem;
   }
   main section.data {
     width: 90%;

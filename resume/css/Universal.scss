@@ -92,10 +92,28 @@ main {
             margin-bottom: 0.5rem;
         }
 
+        div.licenses {
+            display: flex;
+            flex-wrap: wrap;
+
+            div.license {
+                flex: 1 1 500px;
+                padding-left: 2rem;
+
+                p {
+                    padding: 1.5rem;
+                    font-size: 1.5rem;
+
+                }
+
+            }
+        }
+
         div.info {
             display: flex;
             flex-wrap: wrap;
             border: 1px solid rgb(172, 172, 172);
+            margin-top: 1rem;
 
             div.img {
                 flex: 1 1 460px;
@@ -284,21 +302,39 @@ footer {
     }
 
     main {
-        section.society{
-            
+        section.society {
+
+
             width: 100%;
-            div.info{
-                div.img{
+
+            div.info {
+                div.img {
                     flex: 1 1 300px;
 
                 }
-                div.text{
+
+                div.text {
                     flex: 3 1 330px;
-                    
-                    p{
+
+                    p {
                         min-height: 60px;
                         font-size: 1.25rem;
                     }
+                }
+            }
+
+            div.licenses {
+
+
+                div.license {
+                    flex: 1 1 350px;
+                    padding-left: 0;
+
+                    p {
+                        padding: 1.5rem;
+                        font-size: 1.5rem;
+                    }
+
                 }
             }
         }
@@ -360,14 +396,28 @@ footer {
                         min-height: 200px;
                     }
                 }
-                div.text{
-                    p{
+
+                div.text {
+                    p {
                         font-size: 0.8rem;
                         min-height: 60px;
                     }
-                    
+
                 }
 
+            }
+
+            div.licenses {
+                div.license {
+                    flex: 1 1 350px;
+                    padding-left: 0;
+
+                    p {
+                        padding: 1rem;
+                        font-size: 1.25rem;
+                    }
+
+                }
             }
 
 
