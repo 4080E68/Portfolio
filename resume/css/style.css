@@ -204,7 +204,7 @@ main section.alldata section.data ul li {
 }
 
 main section.alldata section.data ul li span.school {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: bolder;
 }
 
@@ -216,6 +216,74 @@ main section.alldata section.data ul li span.year {
 main section.alldata section.data ul li span.major {
   font-size: 1.25rem;
   font-weight: 500;
+}
+
+main section.alldata section.data div.society {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.alldata section.data div.society div.exp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+  padding: 1rem 1rem;
+}
+
+main section.alldata section.data div.society div.exp h2 {
+  font-size: 1.65rem;
+  margin-bottom: 0.5rem;
+}
+
+main section.alldata section.data div.society div.exp span {
+  font-size: 1.5rem;
+}
+
+main section.alldata section.data div.society div.exp span.year {
+  color: gray;
+  font-size: 1.15rem;
+}
+
+main section.alldata section.data div.society div.exp ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+main section.alldata section.data div.society div.exp ol li {
+  font-size: 1.15rem;
+}
+
+main section.alldata section.data div.society div.exp2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+  padding: 1rem 1rem;
+}
+
+main section.alldata section.data div.society div.exp2 h2 {
+  font-size: 1.65rem;
+  margin-bottom: 0.5rem;
+}
+
+main section.alldata section.data div.society div.exp2 span {
+  font-size: 1.5rem;
+}
+
+main section.alldata section.data div.society div.exp2 span.year {
+  color: gray;
+  font-size: 1.15rem;
+}
+
+main section.alldata section.data div.society div.exp2 ol {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+main section.alldata section.data div.society div.exp2 ol li {
+  font-size: 1.15rem;
 }
 
 main section.alldata section.data div.skill {
@@ -313,11 +381,24 @@ footer div.statement p {
     height: 7vw;
     margin-right: 1rem;
   }
+  main section.alldata section.data {
+    width: 85vw;
+  }
   main section.alldata section.data div.skill div.skdata {
     padding: 0.75rem;
   }
   main section.alldata section.data div.skill div.skdata div.skimg {
     width: 15%;
+  }
+  main section.alldata section.data div.society div.exp {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 365px;
+            flex: 2 1 365px;
+  }
+  main section.alldata section.data div.society div.exp2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
   }
 }
 
@@ -429,6 +510,12 @@ footer div.statement p {
   }
   main section.alldata section.data ul li {
     text-align: center;
+  }
+  main section.alldata section.data div.society div.exp ol li {
+    font-size: 0.95rem;
+  }
+  main section.alldata section.data div.society div.exp2 ol li {
+    font-size: 0.95rem;
   }
   main section.alldata section.data div.skill h1 {
     width: 100%;

@@ -74,6 +74,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+
     hr {
         width: 100%;
     }
@@ -96,7 +97,7 @@ main {
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                
+
 
                 img {
 
@@ -166,7 +167,7 @@ main {
                     margin-top: 0.5rem;
 
                     span.school {
-                        font-size: 2rem;
+                        font-size: 1.75rem;
                         font-weight: bolder;
 
                     }
@@ -185,6 +186,69 @@ main {
                 }
 
 
+            }
+
+            div.society {
+                display: flex;
+                flex-wrap: wrap;
+
+                div.exp {
+                    flex: 1 1 420px;
+                    padding: 1rem 1rem;
+
+                    h2 {
+                        font-size: 1.65rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+
+                    span.year {
+                        color: gray;
+                        font-size: 1.15rem;
+
+                    }
+
+                    ol {
+                        padding-left: 1.5rem;
+                        margin-top: 0.5rem;
+
+                        li {
+                            font-size: 1.15rem;
+                        }
+                    }
+                }
+
+                div.exp2 {
+                    flex: 1 1 420px;
+                    padding: 1rem 1rem;
+
+                    h2 {
+                        font-size: 1.65rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    span {
+                        font-size: 1.5rem;
+                    }
+
+                    span.year {
+                        color: gray;
+                        font-size: 1.15rem;
+
+                    }
+
+                    ol {
+                        padding-left: 1.5rem;
+                        margin-top: 0.5rem;
+
+                        li {
+                            font-size: 1.15rem;
+                        }
+                    }
+                }
             }
 
             div.skill {
@@ -292,6 +356,8 @@ footer {
             }
 
             section.data {
+                width: 85vw;
+
                 div.skill {
                     div.skdata {
                         padding: 0.75rem;
@@ -300,6 +366,18 @@ footer {
                             width: 15%;
 
                         }
+                    }
+                }
+
+                div.society {
+                    div.exp {
+                        flex: 2 1 365px;
+
+                    }
+
+                    div.exp2 {
+                        flex: 1 1 300px;
+
                     }
                 }
 
@@ -414,12 +492,13 @@ footer {
 
             section.information {
                 width: 100%;
+
                 div.photo_stickers {
-                        img{
-                            width: 50vw;
-                            height: 60vw;
-                        }
+                    img {
+                        width: 50vw;
+                        height: 60vw;
                     }
+                }
 
                 div.text1 {
                     p {
@@ -470,10 +549,30 @@ footer {
                     }
                 }
 
+                div.society {
+                    div.exp {
+                        ol {
+                            li {
+                                font-size: 0.95rem;
+                            }
+                        }
+
+                    }
+
+                    div.exp2 {
+                        ol {
+                            li {
+                                font-size: 0.95rem;
+                            }
+                        }
+
+                    }
+                }
+
                 div.skill {
-                
+
                     h1 {
-                       width: 100%;
+                        width: 100%;
                     }
 
 
@@ -491,6 +590,7 @@ footer {
                         }
 
                         ol {
+
                             li {
                                 font-size: 1rem;
                             }
