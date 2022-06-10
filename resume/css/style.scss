@@ -141,7 +141,7 @@ main {
 
             div.personal {
                 width: 90%;
-                padding: 1.5rem;
+                padding: 2rem;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -193,7 +193,7 @@ main {
 
                 div.exp {
                     flex: 1 1 420px;
-                    padding: 1rem 1rem;
+                    padding: 2rem;
 
                     h2 {
                         font-size: 1.65rem;
@@ -222,7 +222,7 @@ main {
 
                 div.exp2 {
                     flex: 1 1 420px;
-                    padding: 1rem 1rem;
+                    padding: 2rem;
 
                     h2 {
                         font-size: 1.65rem;
@@ -434,7 +434,7 @@ footer {
 
                 div.personal {
                     margin-left: 0rem;
-                    padding: 0;
+                    padding: 1rem;
 
 
                     div.data {
@@ -447,12 +447,14 @@ footer {
                 div.society {
                     div.exp {
                         flex: 2 1 325px;
+                        padding: 1rem;
                         
 
                     }
 
                     div.exp2 {
                         flex: 1 1 295px;
+                        padding: 1rem;
 
                     }
                 }

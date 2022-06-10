@@ -164,7 +164,7 @@ main section.alldata section.data h1 {
 
 main section.alldata section.data div.personal {
   width: 90%;
-  padding: 1.5rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +229,7 @@ main section.alldata section.data div.society div.exp {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 420px;
           flex: 1 1 420px;
-  padding: 1rem 1rem;
+  padding: 2rem;
 }
 
 main section.alldata section.data div.society div.exp h2 {
@@ -259,7 +259,7 @@ main section.alldata section.data div.society div.exp2 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 420px;
           flex: 1 1 420px;
-  padding: 1rem 1rem;
+  padding: 2rem;
 }
 
 main section.alldata section.data div.society div.exp2 h2 {
@@ -424,7 +424,7 @@ footer div.statement p {
   }
   main section.alldata section.data div.personal {
     margin-left: 0rem;
-    padding: 0;
+    padding: 1rem;
   }
   main section.alldata section.data div.personal div.data {
     -webkit-box-flex: 1;
@@ -436,11 +436,13 @@ footer div.statement p {
     -webkit-box-flex: 2;
         -ms-flex: 2 1 325px;
             flex: 2 1 325px;
+    padding: 1rem;
   }
   main section.alldata section.data div.society div.exp2 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 295px;
             flex: 1 1 295px;
+    padding: 1rem;
   }
 }
 
