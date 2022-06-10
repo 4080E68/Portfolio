@@ -95,7 +95,7 @@ main hr {
 }
 
 main section.alldata section.information {
-  width: 75vw;
+  width: 85vw;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -390,16 +390,6 @@ footer div.statement p {
   main section.alldata section.data div.skill div.skdata div.skimg {
     width: 15%;
   }
-  main section.alldata section.data div.society div.exp {
-    -webkit-box-flex: 2;
-        -ms-flex: 2 1 365px;
-            flex: 2 1 365px;
-  }
-  main section.alldata section.data div.society div.exp2 {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 300px;
-            flex: 1 1 300px;
-  }
 }
 
 @media screen and (max-width: 1148px) {
@@ -441,6 +431,16 @@ footer div.statement p {
         -ms-flex: 1 1 260px;
             flex: 1 1 260px;
     font-size: 1.15rem;
+  }
+  main section.alldata section.data div.society div.exp {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 325px;
+            flex: 2 1 325px;
+  }
+  main section.alldata section.data div.society div.exp2 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 295px;
+            flex: 1 1 295px;
   }
 }
 
