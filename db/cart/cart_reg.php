@@ -10,13 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body style="padding: 1.5rem;">
-    <div style="width: 15%;">
-        <h1>註冊結果</h1>
-        <hr class="my-3">
-
-    </div>
-    
+<body>
     <?php
     $account = $_REQUEST['account'];
     $pwd = $_REQUEST['pwd'];
@@ -26,15 +20,17 @@
     $phone = $_REQUEST['phone'];
     $addr = $_REQUEST['addr'];
     $db = new PDO('mysql:dbname=h568;host=localhost;', 'h568', 'My^4DqPam');
-    //$Q = "insert into client values( 1,'${account}','${pwd}','${name}',${age},'${phone}','${addr}',2);";
     $Q = "insert into client select max(client_id)+1,'${account}','${pwd}','${name}',${age},'${phone}','${addr}','1' from client;";
     $result = $db->query($Q);
     if (!$result) {
-        echo '<h3 style="color:red;">註冊失敗!!</h3>' . "Error! $Q ";
+        echo "<script>alert('註冊失敗!!')</script>";
+        echo "<script>window.location.href='./cart_list.php';</script>";
+        // . "Error! $Q ";
     } else {
-        echo '<h3 style="color:green; ">註冊成功!!</h3>';
+        echo "<script>alert('註冊成功!!')</script>";
+        echo "<script>window.location.href='./cart_list.php';</script>";
     }
-    echo'<button type="submit" class="btn btn-secondary"><a href="../index.html"
+    echo'<button type="submit" class="btn btn-secondary"><a href="./cart_list.php"
                         style="color:white; text-decoration: none;">回首頁</a></button>';
     //echo $Q;
     ?>

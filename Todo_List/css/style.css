@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#3f87a6), color-stop(#b1bca7), to(#f69d3c));
+  background: linear-gradient(90deg, #3f87a6, #b1bca7, #f69d3c);
+  background-size: cover;
+}
+
+body form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+body form input,
+body form button {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  margin: 0.5rem;
+}
+
+body form input[type="number"] {
+  width: 50px;
+  text-align: center;
+}
+
+body form input::-webkit-outer-spin-button,
+body form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body form button {
+  cursor: pointer;
+  background-color: #3f87a6;
+  color: white;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body section .todo {
+  width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0.5rem;
+}
+
+body section .todo p {
+  padding: 1rem;
+  color: black;
+  font-size: 2rem;
+}
+
+body section .todo .todo-text {
+  width: 50%;
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 300px;
+          flex: 5 1 300px;
+}
+
+body section .todo .todo-time {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 180px;
+          flex: 3 1 180px;
+  width: 30%;
+}
+
+body section .todo button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70px;
+          flex: 1 1 70px;
+  width: 10%;
+  padding: 1rem;
+  border: none;
+  font-size: 2.5rem;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+body section .todo button.trash {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+body section .todo button.check {
+  color: white;
+  background-color: rgba(0, 128, 0, 0.7);
+}
+
+@media screen and (max-width: 1070px) {
+  body section .todo {
+    width: 80vw;
+  }
+  body section .todo p {
+    font-size: 1.25rem;
+  }
+  body section .todo .todo-text {
+    width: 50%;
+    -webkit-box-flex: 5;
+        -ms-flex: 5 1 180px;
+            flex: 5 1 180px;
+  }
+  body section .todo .todo-time {
+    width: 30%;
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 120px;
+            flex: 3 1 120px;
+  }
+  body section .todo button {
+    width: 10%;
+    font-size: 1.75rem;
+    padding: 0rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50px;
+            flex: 1 1 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body section .todo .todo-time {
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 400px;
+            flex: 3 1 400px;
+  }
+  body section .todo button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50px;
+            flex: 1 1 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

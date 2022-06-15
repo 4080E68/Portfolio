@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+body {
+    background: linear-gradient(90deg, #3f87a6, #b1bca7, #f69d3c);
+    background-size: cover;
+
+    form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        input,
+        button {
+            border: none;
+            padding: 0.25rem 0.5rem;
+            font-size: 1.75rem;
+            margin: 0.5rem;
+        }
+
+        input[type="number"] {
+            width: 50px;
+            text-align: center;
+
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #3f87a6;
+            color: white;
+        }
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .todo {
+            width: 45vw;
+            display: flex;
+            flex-wrap: wrap;
+
+            border: 1px solid black;
+            background-color: white;
+            margin: 0.5rem;
+
+            p {
+                padding: 1rem;
+                color: black;
+                font-size: 2rem;
+            }
+
+            .todo-text {
+                width: 50%;
+                flex: 5 1 300px;
+            }
+
+            .todo-time {
+                flex: 3 1 180px;
+                width: 30%;
+            }
+
+            button {
+                flex: 1 1 70px;
+                width: 10%;
+                padding: 1rem;
+                border: none;
+                font-size: 2.5rem;
+                background-color: white;
+                cursor: pointer;
+                text-align: center;
+            }
+
+            button.trash {
+                color: white;
+                background-color: rgba($color: red, $alpha: 0.7);
+            }
+
+            button.check {
+                color: white;
+                background-color: rgba($color: green, $alpha: 0.7)
+            }
+
+
+
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:1070px) {
+    body {
+        section {
+            .todo {
+                width: 80vw;
+
+                p {
+                    font-size: 1.25rem;
+                }
+
+
+
+                .todo-text {
+                    width: 50%;
+                    flex: 5 1 180px;
+                }
+
+                .todo-time {
+                    width: 30%;
+                    flex: 3 1 120px;
+                }
+
+                button {
+                    width: 10%;
+                    font-size: 1.75rem;
+                    padding: 0rem;
+                    flex: 1 1 50px;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    body {
+        section {
+            .todo {
+
+                .todo-time {
+                    flex: 3 1 400px;
+                }
+
+                button {
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                    flex: 1 1 50px;
+                }
+            }
+        }
+
+    }
+
+
+}

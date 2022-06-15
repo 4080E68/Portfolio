@@ -21,6 +21,8 @@ nav {
   -webkit-box-shadow: 0 8px 6px -6px #2a2929;
           box-shadow: 0 8px 6px -6px #2a2929;
   z-index: 3;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 nav .nav1 {

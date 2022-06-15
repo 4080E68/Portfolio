@@ -20,26 +20,42 @@
 </head>
 
 <body>
+    <style>
+        * {
+            font-size: 1rem;
+        }
+    
+        body {
+            display: flex;
+            justify-content: center;
+    
+        }
+    
+        h1 {
+            text-align: center;
+        }
+    </style>
 
 
     <form action="./cart_pins.php" method="post" enctype="multipart/form-data" style="padding: 1.5rem; width: 40%;">
         <h1>商品上架</h1>
+        <hr>
         <div class="form-group">
             <label for="exampleInputEmail1">廠商</label>
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="請輸入廠商" name="vendor">
+                placeholder="請輸入廠商" name="vendor" required="required">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">商品名稱</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="請輸入商品名稱" name="name">
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="請輸入商品名稱" name="name" required="required">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">價格</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="請輸入價格" name="price">
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="請輸入價格" name="price" required="required">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">數量</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="請輸入數量" name="num">
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="請輸入數量" name="num" required="required">
         </div>
         <div class="form-group">
             <label for="exampleFormControlFile1">商品照片</label>
@@ -48,7 +64,7 @@
 
         <button type="submit" class="btn btn-primary">上架</button>
         <button type="submit" class="btn btn-secondary">
-            <a href="../index.html" style="color:white; text-decoration: none;">回首頁</a></button>
+            <a href="./cart_list.php" style="color:white; text-decoration: none;">回首頁</a></button>
     </form>
 
 

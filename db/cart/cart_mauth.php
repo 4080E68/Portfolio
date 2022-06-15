@@ -1,7 +1,9 @@
 <?php
-    session_start();
-        if ($_SESSION['login']!=1){
-                header('location: cart_login.html');
-                
-        }
+session_start();
+if ($_SESSION['identity'] != 2) {
+        echo "<script>alert('權限不足!!')</script>";
+        echo "<script>window.location.href='./cart_list.php';</script>";
+        die('');
+        
+}
 ?>

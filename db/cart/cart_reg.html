@@ -18,6 +18,20 @@
 </head>
 
 <body>
+    <style>
+        *{
+            font-size: 1rem;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        
+    </style>
 
 
     <form style="width: 50%;padding: 2rem; font-size: 1rem; " method="post" action="./cart_reg.php">
@@ -26,51 +40,51 @@
         
         <div class="form-group column">
             <label for="inputEmail3" class="col-sm-2 col-form-label">帳號</label><br>
-            <div class="col-sm-10">
-                <input type="text" class="form-control"  name="account" placeholder="請輸入帳號">
+            <div class="col-sm-12">
+                <input type="text" class="form-control"  name="account" placeholder="請輸入帳號" required="required">
             </div>
         </div>
         <div class="form-group column">
             <label for="inputPassword3" class="col-sm-2 col-form-label">密碼</label><br>
-            <div class="col-sm-10">
-                <input type="password" class="form-control"  name="pwd" placeholder="請輸入密碼">
+            <div class="col-sm-12">
+                <input type="password" class="form-control"  name="pwd" placeholder="請輸入密碼" required="required">
             </div>
         </div>
         <div class="form-group column">
             <label for="inputPassword3" class="col-sm-2 col-form-label">密碼確認</label><br>
-            <div class="col-sm-10">
-                <input type="password" class="form-control"  name="pwd1" placeholder="請再次輸入密碼">
+            <div class="col-sm-12">
+                <input type="password" class="form-control"  name="pwd1" placeholder="請再次輸入密碼" required="required">
             </div>
         </div>
         <div class="form-group column">
             <label for="inputEmail3" class="col-sm-2 col-form-label">姓名</label><br>
-            <div class="col-sm-10">
-                <input type="text" class="form-control"  name="name" placeholder="請輸入姓名">
+            <div class="col-sm-12">
+                <input type="text" class="form-control"  name="name" placeholder="請輸入姓名" required="required">
             </div>
         </div>
         <div class="form-group column">
             <label for="inputEmail3" class="col-sm-2 col-form-label">年齡</label><br>
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                 <input type="text" class="form-control"  name="age" placeholder="請輸入年齡">
             </div>
         </div>
         <div class="form-group column">
             <label for="inputEmail3" class="col-sm-2 col-form-label">手機號碼</label><br>
-            <div class="col-sm-10">
-                <input type="text" class="form-control"  name="phone" placeholder="請輸入手機號碼">
+            <div class="col-sm-12">
+                <input type="text" class="form-control"  name="phone" placeholder="請輸入手機號碼" required="required">
             </div>
         </div>
         <div class="form-group column">
             <label for="inputEmail3" class="col-sm-2 col-form-label">地址</label><br>
-            <div class="col-sm-10">
+            <div class="col-sm-12">
                 <input type="text" class="form-control"  name="addr" placeholder="請輸入地址">
             </div>
         </div>
 
         <div class="form-group row" style="margin-left: 0;">
-            <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">登入</button>
-                <button type="submit" class="btn btn-secondary"><a href="../index.html"
+            <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary">註冊</button>
+                <button type="submit" class="btn btn-secondary"><a href="./cart_list.php"
                         style="color:white; text-decoration: none;">回首頁</a></button>
             </div>
         </div>

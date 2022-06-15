@@ -13,19 +13,19 @@
     <h1>Psql商品上架</h1>
     <form action="./pins.php" method="post" enctype="multipart/form-data">
         <label>商品名稱:
-            <input type="text" name="name" id="name" size="20">
+            <input type="text" name="name" id="name" size="20" required="required">
         </label><br>
         <label>商品照片:
-            <input type="file" name="photo" id="photo">
+            <input type="file" name="photo" id="photo" required="required">
         </label><br>
         <label>產地:
-            <input type="text" name="place" id="place" size="10">
+            <input type="text" name="place" id="place" size="10" required="required">
         </label><br>
         <label>存量:
-            <input type="text" name="num" id="num" size="10">
+            <input type="text" name="num" id="num" size="10" required="required">
         </label><br>
         <label>價格:
-            <input type="text" name="price" id="price" size="10">
+            <input type="text" name="price" id="price" size="10" required="required">
         </label><br>
         
         <input type="submit" name="sub" value="上架">

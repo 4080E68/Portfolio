@@ -11,23 +11,25 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-    
 
-<body>
+
+<body style="padding: 1rem;">
     <h1>查詢結果</h1>
 
     <?php
     //認證
+    session_start();
+    
     $key = str_replace("'", "''", $_REQUEST['key']);
     $db = new PDO('pgsql:dbname=h568;host=localhost;', 'h568', 'P#3Maf5mr');
-    $Q = "select gid,name,place,num,price from good where name like '%${key}%'";
+    $Q = "select gid,name,place,num,price from good where name like '%${key}%' order by gid asc";
     $result = $db->query($Q);
     if (!$result) echo "Error! $Q ";
     $A = $result->fetchAll(PDO::FETCH_ASSOC);
-    //$A=$result->fetchAll(PDO::FETCH_NUM);
+    //$A=$result->fetchAll(PDO::FETCH_NUM); 
     $num = count($A);
     echo $num . '筆<br/>';
-    echo '<table border="1" class="table table-striped">';
+    echo '<table border="1" class="table table-striped" style="width:80vw">';
     for ($i = 0; $i < $num; $i = $i + 1) {
         $Agid = $A[$i]['gid'];
         $Aname = $A[$i]['name'];
@@ -35,11 +37,18 @@
         $Aplace = $A[$i]['place'];
         $Anum = $A[$i]['num'];
         $Aimg = 'img/' . $A[$i]['gid'] . '.jpg';
+        $ALimg = 'img/LL' . $A[$i]['gid'] . '.jpg';//<a target='ph' href='${ALimg}'>
 
+        echo "<tr><td><a href='mproc.php?gid=${Agid}&op=1'>刪除</a>  <a href='mproc.php?gid=${Agid}&op=2'>
+                修改</a>  <a href='mproc.php?gid=${Agid}&op=3'>
+                購買</a></td>";
         if (is_file($Aimg))
-            echo "<tr><td>${Agid}</td><td><img width='500px' height='300px' src='${Aimg}'/></td><td>{$Aname}</td><td>${Aplace}</td><td>${Anum}</td><td>${Aprice}</td></tr>";
+            echo "<td>${Agid}</td><td width='500px' ><a target='ph' href='${ALimg}'><img width='500px' height='300px' src='${Aimg}'/></a></td><td>{$Aname}</td><td>${Aplace}</td><td>${Anum}</td><td>${Aprice}</td>";
         else
-            echo "<tr><td>${Agid}</td><td>無圖</td><td>{$Aname}</td><td>${Aplace}</td><td>${Anum}</td><td>${Aprice}</td></tr>";
+            echo "<td>${Agid}</td><td>無圖</td><td>{$Aname}</td><td>${Aplace}</td><td>${Anum}</td><td>${Aprice}</td>";
+        echo '</tr>';
+
+        
     }
     echo '</table>';
     pg_close($db);
