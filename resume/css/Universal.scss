@@ -75,6 +75,55 @@ header {
 
 }
 
+body {
+    section.main {
+        display: flex;
+        justify-content: center;
+
+        section.contact {
+            width: 50%;
+
+            display: flex;
+            flex-direction: column;
+
+            flex-wrap: wrap;
+
+            div.text {
+                flex: 1 1 300px;
+                margin: 2rem;
+                border: 0.5px solid rgb(176, 174, 174);
+                text-align: center;
+
+                h2 {
+                    text-align: center;
+                }
+
+                padding: 2rem;
+
+                p {
+                    font-size: 1.5rem;
+                    margin: 1rem;
+                }
+            }
+
+            form {
+                flex: 1 1 300px;
+                margin: 2rem;
+
+                h2 {
+                    text-align: center;
+                }
+
+                border: 0.5px solid rgb(176, 174, 174);
+                padding: 2rem;
+            }
+
+        }
+
+    }
+
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -301,6 +350,14 @@ footer {
         }
     }
 
+    body {
+        section.main {
+            section.contact {
+                width: 80%;
+            }
+        }
+    }
+
     main {
         section.society {
 
@@ -384,6 +441,30 @@ footer {
         nav {
             ul {
                 flex-direction: column;
+            }
+        }
+    }
+
+    body {
+        section.main {
+            section.contact {
+                width: 100%;
+
+                div.text {
+                    padding: 1rem;
+                    margin: 1rem;
+                    max-height: 230px;
+
+                    p {
+                        font-size: 1.15rem;
+                    }
+
+                }
+
+                form {
+                    margin: 0rem;
+                    margin: 1rem;
+                }
             }
         }
     }

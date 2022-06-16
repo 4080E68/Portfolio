@@ -83,6 +83,60 @@ header nav ul li a {
   color: white;
 }
 
+body section.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.main section.contact {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body section.main section.contact div.text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  margin: 2rem;
+  border: 0.5px solid #b0aeae;
+  text-align: center;
+  padding: 2rem;
+}
+
+body section.main section.contact div.text h2 {
+  text-align: center;
+}
+
+body section.main section.contact div.text p {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+body section.main section.contact form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  margin: 2rem;
+  border: 0.5px solid #b0aeae;
+  padding: 2rem;
+}
+
+body section.main section.contact form h2 {
+  text-align: center;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +371,9 @@ footer div.statement p {
         justify-content: space-around;
     padding-left: 0;
   }
+  body section.main section.contact {
+    width: 80%;
+  }
   main section.society {
     width: 100%;
   }
@@ -379,6 +436,21 @@ footer div.statement p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body section.main section.contact {
+    width: 100%;
+  }
+  body section.main section.contact div.text {
+    padding: 1rem;
+    margin: 1rem;
+    max-height: 230px;
+  }
+  body section.main section.contact div.text p {
+    font-size: 1.15rem;
+  }
+  body section.main section.contact form {
+    margin: 0rem;
+    margin: 1rem;
   }
   main section.society div.info div.img img {
     min-height: 200px;
