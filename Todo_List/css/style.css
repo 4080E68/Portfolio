@@ -145,6 +145,35 @@ body section .todo button.check {
   background-color: rgba(0, 128, 0, 0.7);
 }
 
+body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body div div.sort {
+  width: 45vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 1rem;
+}
+
+body div div.sort button {
+  cursor: pointer;
+  background-color: #3f87a6;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+}
+
 @media screen and (max-width: 1070px) {
   body section .todo {
     width: 80vw;
@@ -172,9 +201,20 @@ body section .todo button.check {
         -ms-flex: 1 1 50px;
             flex: 1 1 50px;
   }
+  body div div.sort {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  body form input[type="text"] {
+    width: 100%;
+    text-align: center;
+  }
+  body form input[type="number"] {
+    width: 20%;
+    text-align: center;
+  }
   body section .todo .todo-time {
     -webkit-box-flex: 3;
         -ms-flex: 3 1 400px;

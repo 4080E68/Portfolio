@@ -4,7 +4,8 @@
     box-sizing: border-box;
 
 }
-i{
+
+i {
     pointer-events: none; //讓使用者點選不到I標籤
 }
 
@@ -119,6 +120,35 @@ body {
         }
     }
 
+    div {
+        display: flex;
+        justify-content: center;
+
+        div.sort {
+            width: 45vw;
+            display: flex;
+            justify-content: start;
+            margin-top: 1rem;
+
+
+
+
+
+            button {
+
+                cursor: pointer;
+                background-color: #3f87a6;
+                color: white;
+                border: none;
+
+                padding: 0.25rem 0.5rem;
+                font-size: 1.75rem;
+            }
+        }
+
+    }
+
+
 
 
 }
@@ -155,6 +185,12 @@ body {
 
         }
 
+        div {
+            div.sort {
+                width: 80vw;
+            }
+        }
+
     }
 
 
@@ -162,6 +198,19 @@ body {
 
 @media screen and (max-width:500px) {
     body {
+        form {
+            input[type="text"] {
+                width: 100%;
+                text-align: center;
+
+            }
+            input[type="number"] {
+                width: 20%;
+                text-align: center;
+
+            }
+        }
+
         section {
             .todo {
 
@@ -173,6 +222,7 @@ body {
                     font-size: 2rem;
                     padding: 0.5rem;
                     flex: 1 1 50px;
+
                 }
             }
         }
@@ -181,33 +231,39 @@ body {
 
 
 }
-.done{
+
+.done {
     opacity: 0.5;
     text-decoration: line-through;
     text-decoration-thickness: 0.2rem;
 }
 
-@keyframes scaleUp{
-    from{
+@keyframes scaleUp {
+    from {
         transform: scale(0);
     }
-    to{
+
+    to {
         transform: scale(1);
     }
 }
-@keyframes scaleLow{
-    to{
+
+@keyframes scaleLow {
+    to {
         transform: scale(0);
     }
 }
-@keyframes toUp{
-    from{
+
+@keyframes toUp {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(2);
     }
 }
+
 // @keyframes fadein {
 //     0% {
 //         opacity: 0;

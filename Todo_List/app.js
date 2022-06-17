@@ -21,10 +21,12 @@ add.addEventListener("click", (e) => {
   todo.classList.add("todo"); //新增css
   let text = document.createElement("p");
   text.classList.add("todo-text");
-  text.innerText = "事件:" + todoText;
+  text.innerText = todoText;
   let time = document.createElement("p");
   time.classList.add("todo-time");
-  time.innerText = "日期:" + todoMonth + "/" + todoDate;
+  time.innerText = todoMonth + "/" + todoDate;
+  
+
   todo.appendChild(text);
   todo.appendChild(time);
   section.appendChild(todo);
@@ -89,67 +91,130 @@ add.addEventListener("click", (e) => {
   }
 
   form.children[0].value = ""; //清空輸入欄位
+  section.appendChild(todo);
 });
+loadData();
+function loadData() {
+  let myList = localStorage.getItem("list"); //取得localstorage裡面的值
 
-let myList = localStorage.getItem("list"); //取得localstorage裡面的值
+  if (myList !== "") {
+    //若不為空
+    let myListArray = JSON.parse(myList);
+    myListArray.forEach((item) => {
+      //須將物件裡面各項的值取出，所以需要使用forEach
+      //將localstorage裡面的值依序加入html
+      let todo = document.createElement("div");
+      todo.classList.add("todo");
+      let text = document.createElement("p");
+      text.classList.add("todo-text");
+      text.innerText = item.todoText;
+      let time = document.createElement("p");
+      time.classList.add("todo-time");
+      time.innerText = item.todoMonth + "/" + item.todoDate;
+      todo.appendChild(text);
+      todo.appendChild(time);
 
-if (myList !== "") {
-  //若不為空
-  let myListArray = JSON.parse(myList);
-  myListArray.forEach((item) => {
-    //須將物件裡面各項的值取出，所以需要使用forEach
-    //將localstorage裡面的值依序加入html
-    let todo = document.createElement("div");
-    todo.classList.add("todo");
-    let text = document.createElement("p");
-    text.classList.add("todo-text");
-    text.innerText = item.todoText;
-    let time = document.createElement("p");
-    time.classList.add("todo-time");
-    time.innerText = item.todoMonth + "/" + item.todoDate;
-    todo.appendChild(text);
-    todo.appendChild(time);
+      let check = document.createElement("button");
+      check.classList.add("check");
+      check.innerHTML = '<i class="fa-regular fa-circle-check"></i>'; //確認圖標
+      let trash = document.createElement("button");
+      trash.classList.add("trash");
+      trash.innerHTML = '<i class="fa-regular fa-trash-can"></i>'; //垃圾桶圖標
+      todo.appendChild(check);
+      todo.appendChild(trash);
 
-    let check = document.createElement("button");
-    check.classList.add("check");
-    check.innerHTML = '<i class="fa-regular fa-circle-check"></i>'; //確認圖標
-    let trash = document.createElement("button");
-    trash.classList.add("trash");
-    trash.innerHTML = '<i class="fa-regular fa-trash-can"></i>'; //垃圾桶圖標
-    todo.appendChild(check);
-    todo.appendChild(trash);
+      todo.style.animation = "scaleUp 0.5s forwards";
 
-    todo.style.animation = "scaleUp 0.5s forwards";
+      check.addEventListener("click", (e) => {
+        //確認按鈕觸發事件
+        console.log(e.target.parentElement);
+        let todoItem = e.target.parentElement;
+        todoItem.classList.toggle("done"); //toggle與現在狀態相反,有的話增加反之消除
 
-    check.addEventListener("click", (e) => {
-      //確認按鈕觸發事件
-      console.log(e.target.parentElement);
-      let todoItem = e.target.parentElement;
-      todoItem.classList.toggle("done"); //toggle與現在狀態相反,有的話增加反之消除
-
-      //check.style.animation = "toUp 0.5s forwards";
-    });
-    trash.addEventListener("click", (e) => {
-      //垃圾桶觸發事件
-      let todoItem = e.target.parentElement; //取得該筆資料的父標籤
-      console.log(todoItem);
-      todoItem.style.animation = "scaleLow 0.5s forwards";
-      todoItem.addEventListener("animationend", (e) => {
-        //在動畫結束後執行
-        let text = todoItem.children[0].innerText;
-        let myListArray = JSON.parse(localStorage.getItem("list"));
-        myListArray.forEach((item, index) => {
-          if (item.todoText == text) {
-            //如果這次執行的todoText結果跟所選的事項內容一樣就執行
-            myListArray.splice(index, 1); //splice(刪除位置,刪除筆數)
-            localStorage.setItem("list", JSON.stringify(myListArray));
-          }
-        });
-
-        todoItem.remove(); //移除todoItem
+        //check.style.animation = "toUp 0.5s forwards";
       });
-    });
+      trash.addEventListener("click", (e) => {
+        //垃圾桶觸發事件
+        let todoItem = e.target.parentElement; //取得該筆資料的父標籤
+        console.log(todoItem);
+        todoItem.style.animation = "scaleLow 0.5s forwards";
+        todoItem.addEventListener("animationend", (e) => {
+          //在動畫結束後執行
+          let text = todoItem.children[0].innerText;
+          let myListArray = JSON.parse(localStorage.getItem("list"));
+          myListArray.forEach((item, index) => {
+            if (item.todoText == text) {
+              //如果這次執行的todoText結果跟所選的事項內容一樣就執行
+              myListArray.splice(index, 1); //splice(刪除位置,刪除筆數)
+              localStorage.setItem("list", JSON.stringify(myListArray));
+            }
+          });
 
-    section.appendChild(todo);
-  });
+          todoItem.remove(); //移除todoItem
+        });
+      });
+
+      section.appendChild(todo);
+    });
+  }
 }
+
+function mergeTime(arr1, arr2) {
+  let result = [];
+  let i = 0;
+  let j = 0;
+  while (i < arr1.length && j < arr2.length) {
+    if (Number(arr1[i].todoMonth) > Number(arr2[j].todoMonth)) {
+      result.push(arr2[j]);
+      j++;
+    } else if (Number(arr1[i].todoMonth) < Number(arr2[j].todoMonth)) {
+      result.push(arr1[i]);
+      i++;
+    } else if (Number(arr1[i].todoMonth) == Number(arr2[j].todoMonth)) {
+      if (Number(arr1[i].todoDate) > Number(arr2[j].todoDate)) {
+        result.push(arr2[j]);
+        j++;
+      } else {
+        result.push(arr1[i]);
+        i++;
+      }
+    }
+  }
+
+  while (i < arr1.length) {
+    result.push(arr1[i]);
+    i++;
+  }
+  while (j < arr2.length) {
+    result.push(arr2[j]);
+    j++;
+  }
+  return result;
+}
+
+function mergeSort(arr) {
+  if (arr.length === 1) {
+    return arr;
+  } else {
+    let middle = Math.floor(arr.length / 2);
+    let right = arr.slice(0, middle);
+    let left = arr.slice(middle, arr.length);
+    return mergeTime(mergeSort(right), mergeSort(left));
+  }
+}
+
+let sortButton = document.querySelector("div.sort button");
+sortButton.addEventListener("click", () => {
+  // sort data
+  let sortedArray = mergeSort(JSON.parse(localStorage.getItem("list")));
+  localStorage.setItem("list", JSON.stringify(sortedArray));
+
+  // remove data
+  let len = section.children.length;
+  for (let i = 0; i < len; i++) {
+    section.children[0].remove();
+  }
+
+  // load data
+  loadData();
+});
