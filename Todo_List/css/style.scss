@@ -22,10 +22,12 @@ header {
 }
 
 body {
-    background: linear-gradient(90deg, #3f87a6, #b1bca7, #f69d3c);
-    background-size: cover;
+    
+    background-color: #34312D;
+    background-size: cover; 
 
     form {
+
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -204,6 +206,7 @@ body {
                 text-align: center;
 
             }
+
             input[type="number"] {
                 width: 20%;
                 text-align: center;

@@ -28,8 +28,7 @@ header h1 {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#3f87a6), color-stop(#b1bca7), to(#f69d3c));
-  background: linear-gradient(90deg, #3f87a6, #b1bca7, #f69d3c);
+  background-color: #34312D;
   background-size: cover;
 }
 
