@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .active {
   background-color: black;
 }
@@ -220,7 +225,7 @@ main section.society div.info div.text {
 
 main section.society div.info div.text p {
   margin-top: 0.5rem;
-  min-height: 200px;
+  min-height: 230px;
 }
 
 main section.society div.info div.text button {
@@ -239,7 +244,7 @@ main section.society div.info div.text button a {
 }
 
 main section.data {
-  width: 80%;
+  width: 95%;
 }
 
 main section.data h1 {
@@ -253,11 +258,10 @@ main section.data hr {
 }
 
 main section.data section.end {
-  width: 80%;
+  width: 65%;
 }
 
 main section.data div.cards {
-  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +285,8 @@ main section.data div.cards div.card {
           flex: 1 1 350px;
   border: 1px solid gray;
   margin-right: 1rem;
-  max-width: 40%;
+  max-width: 425px;
+  margin-top: 1rem;
 }
 
 main section.data div.cards div.card hr {
@@ -388,7 +393,7 @@ footer div.statement p {
             flex: 3 1 330px;
   }
   main section.society div.info div.text p {
-    min-height: 60px;
+    min-height: 100px;
     font-size: 1.25rem;
   }
   main section.society div.licenses div.license {
@@ -408,6 +413,7 @@ footer div.statement p {
     width: 80%;
   }
   main section.data div.cards div.card {
+    max-width: 247px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 230px;
             flex: 1 1 230px;
@@ -420,6 +426,9 @@ footer div.statement p {
   }
   main section.data div.cards div.card img {
     height: 150px;
+  }
+  main section.data div.cards div.card div.text {
+    min-height: 260px;
   }
 }
 

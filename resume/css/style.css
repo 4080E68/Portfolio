@@ -123,6 +123,8 @@ main section.alldata section.information div.photo_stickers {
 }
 
 main section.alldata section.information div.photo_stickers img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 200px;
   height: 250px;
   border-radius: 50%;
