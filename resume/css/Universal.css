@@ -362,7 +362,7 @@ footer div.statement p {
     width: 80%;
   }
   main section.data div.cards div.card {
-    max-width: 230px;
+    max-width: 250px;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 230px;
             flex: 1 1 230px;
