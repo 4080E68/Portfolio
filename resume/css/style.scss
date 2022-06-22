@@ -4,69 +4,96 @@
     box-sizing: border-box;
 }
 
-.active {
-    background-color: black;
-}
-
-// body {
-//     background-color: black;
-// }
-
 header {
-    background-color: rgb(52, 58, 64);
-    display: flex;
-    color: white;
-    font-size: 1.75rem;
-    flex-wrap: wrap;
     position: sticky;
     top: 0;
     box-shadow: 0 8px 6px -6px rgb(42, 41, 41);
     z-index: 3;
 
-
-    div.job_title {
-        display: flex;
-        flex: 10 1 300px;
-        margin-left: 2rem;
-        align-items: center;
-
-        p {
-            font-size: 2rem;
-        }
-
-    }
-
     nav {
-        flex: 1 1 800px;
+        a.navbar-brand {
+            font-size: 1.75rem;
+            margin-left: 1rem;
+
+        }
 
         ul {
-            display: flex;
-            justify-content: center;
-
-            li:hover {
-                background-color: black;
-            }
-
             li {
-                display: flex;
-                list-style-type: none;
-                transition: all 0.35s ease;
+                font-size: 1.5rem;
+                margin-right: 1rem;
 
-                a {
-                    padding: 1.25rem;
-                    text-decoration: none;
-                    color: white;
 
+                a.nav-link {
+                    padding: 0.75rem;
                 }
-
-
-
             }
         }
     }
-
-
 }
+
+// .active {
+//     background-color: black;
+// }
+
+// body {
+//     background-color: black;
+// }
+
+// header {
+//     background-color: rgb(52, 58, 64);
+//     display: flex;
+//     color: white;
+//     font-size: 1.75rem;
+//     flex-wrap: wrap;
+//     position: sticky;
+//     top: 0;
+//     box-shadow: 0 8px 6px -6px rgb(42, 41, 41);
+//     z-index: 3;
+
+
+//     div.job_title {
+//         display: flex;
+//         flex: 10 1 300px;
+//         margin-left: 2rem;
+//         align-items: center;
+
+//         p {
+//             font-size: 2rem;
+//         }
+
+//     }
+
+//     nav {
+//         flex: 1 1 800px;
+
+//         ul {
+//             display: flex;
+//             justify-content: center;
+
+//             li:hover {
+//                 background-color: black;
+//             }
+
+//             li {
+//                 display: flex;
+//                 list-style-type: none;
+//                 transition: all 0.35s ease;
+
+//                 a {
+//                     padding: 1.25rem;
+//                     text-decoration: none;
+//                     color: white;
+
+//                 }
+
+
+
+//             }
+//         }
+//     }
+
+
+// }
 
 
 
@@ -75,11 +102,13 @@ main {
     align-items: center;
     flex-direction: column;
 
+
     hr {
         width: 100%;
     }
 
     section.alldata {
+
         // background-color: white;
         // border-radius: 1%;
         // width: 65vw;
@@ -119,6 +148,7 @@ main {
 
                 p {
                     font-size: 1.25rem;
+                    margin: 0;
 
                 }
 
@@ -331,7 +361,7 @@ footer {
     main {
         section.alldata {
             section.information {
-                
+
 
                 div.photo_stickers {
                     justify-content: center;
@@ -358,7 +388,7 @@ footer {
             }
 
             section.data {
-                
+
 
                 div.skill {
                     div.skdata {
@@ -396,24 +426,24 @@ footer {
         }
     }
 
-    header {
-        div.job_title {
-            margin-left: 0;
-            margin-bottom: 0.5rem;
-            justify-content: center;
+    // header {
+    //     div.job_title {
+    //         margin-left: 0;
+    //         margin-bottom: 0.5rem;
+    //         justify-content: center;
 
-            p {
-                text-align: center;
-            }
-        }
+    //         p {
+    //             text-align: center;
+    //         }
+    //     }
 
-        nav {
-            ul {
-                margin-right: 0;
-                justify-content: space-around;
-            }
-        }
-    }
+    //     nav {
+    //         ul {
+    //             margin-right: 0;
+    //             justify-content: space-around;
+    //         }
+    //     }
+    // }
 
     main {
         section.alldata {
@@ -428,6 +458,7 @@ footer {
 
             section.data {
                 width: 85vw;
+
                 ul {
                     margin-left: 0rem;
                     padding: 1rem;
@@ -449,7 +480,7 @@ footer {
                     div.exp {
                         flex: 2 1 325px;
                         padding: 1rem;
-                        
+
 
                     }
 
@@ -474,22 +505,22 @@ footer {
         }
     }
 
-    header {
-        position: static;
+    // header {
+    //     position: static;
 
-        div.job_title {
-            p {
-                padding: 0.5rem;
-                text-align: center;
-            }
-        }
+    //     div.job_title {
+    //         p {
+    //             padding: 0.5rem;
+    //             text-align: center;
+    //         }
+    //     }
 
-        nav {
-            ul {
-                flex-direction: column;
-            }
-        }
-    }
+    //     nav {
+    //         ul {
+    //             flex-direction: column;
+    //         }
+    //     }
+    // }
 
     main {
 
@@ -559,8 +590,26 @@ footer {
                 }
 
                 div.society {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
                     div.exp {
+                        flex: 1 1 200px;
+
+                        h2 {
+                            text-align: center;
+                            font-weight: bolder;
+                        }
+
+                        p {
+                            text-align: center;
+                            margin-bottom: 0.5rem;
+                        }
+
                         ol {
+                            padding-left: 2rem;
+
                             li {
                                 font-size: 0.95rem;
                             }
@@ -568,14 +617,7 @@ footer {
 
                     }
 
-                    div.exp2 {
-                        ol {
-                            li {
-                                font-size: 0.95rem;
-                            }
-                        }
 
-                    }
                 }
 
                 div.skill {
@@ -626,6 +668,7 @@ footer {
             p {
 
                 font-size: 0.75rem;
+
 
 
             }

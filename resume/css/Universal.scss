@@ -6,76 +6,45 @@
 img{
     object-fit: cover;
 }
-
-.active {
-    background-color: black;
+hr{
+    margin: 0;
+    background-color: rgb(175, 175, 175);
 }
+// .active {
+//     background-color: black;
+// }
 
 // body {
 //     background-color: black;
 // }
 
 header {
-    background-color: rgb(52, 58, 64);
-    display: flex;
-    color: white;
-    font-size: 1.75rem;
-    flex-wrap: wrap;
     position: sticky;
     top: 0;
     box-shadow: 0 8px 6px -6px rgb(42, 41, 41);
     z-index: 3;
 
-
-    div.job_title {
-        display: flex;
-        flex: 10 1 300px;
-        margin-left: 2rem;
-        align-items: center;
-
-        p {
-            font-size: 2rem;
-            margin-bottom: 0;
-        }
-
-    }
-
     nav {
-        flex: 1 1 800px;
+
+
+
+        a.navbar-brand {
+            font-size: 1.75rem;
+            margin-left: 1rem;
+        }
 
         ul {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 0;
-
-            li:hover {
-                background-color: black;
-
-                a {
-                    color: white;
-                }
-            }
-
             li {
-                display: flex;
-                list-style-type: none;
-                transition: all 0.35s ease;
-
-                a {
-                    padding: 1.25rem;
-                    text-decoration: none;
-                    color: white;
+                font-size: 1.5rem;
+                margin-right: 1rem;
 
 
+                a.nav-link {
+                    padding: 0.75rem;
                 }
-
-
-
             }
         }
     }
-
-
 }
 
 body {
@@ -99,6 +68,7 @@ body {
 
                 h2 {
                     text-align: center;
+                    margin-bottom: 1rem;
                 }
 
                 padding: 2rem;
@@ -111,10 +81,14 @@ body {
 
             form {
                 flex: 1 1 300px;
-                margin: 2rem;
+                margin: 1rem 2rem;
 
                 h2 {
                     text-align: center;
+                    margin-bottom: 1rem;
+                }
+                label{
+                    font-size: 1.25rem;
                 }
 
                 border: 0.5px solid rgb(176, 174, 174);
@@ -155,6 +129,7 @@ main {
                 p {
                     padding: 1.5rem;
                     font-size: 1.5rem;
+                    margin: 0;
 
                 }
 
@@ -191,18 +166,22 @@ main {
                 }
 
                 button {
-                    margin-top: 1rem;
-                    padding: 1rem;
+                    
+                    
                     background-color: #0d6efd;
                     border: none;
-                    text-align: center;
                     width: 130px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
 
                     a {
+                        padding: 1rem;
                         text-decoration: none;
                         font-size: 1rem;
                         color: white;
-
+                        
 
 
                     }
@@ -252,6 +231,7 @@ main {
                 hr {
                     background-color: black;
                     width: 90%;
+                    margin: 0;
                 }
 
                 img {
@@ -263,7 +243,7 @@ main {
                 h2 {
                     font-size: 1.75rem;
                     text-align: center;
-                    margin-bottom: 0.5rem;
+                    margin-bottom: 0;
                     padding: 1rem;
                 }
 
@@ -276,7 +256,7 @@ main {
                     justify-content: space-between;
                     padding: 1.3rem;
                     width: 100%;
-                    min-height: 200px;
+                    min-height: 230px;
 
 
                     button {
@@ -335,25 +315,25 @@ footer {
 }
 
 @media screen and (max-width:1148px) {
-    header {
-        div.job_title {
-            margin-left: 0;
-            margin-bottom: 0.5rem;
-            justify-content: center;
+    // header {
+    //     div.job_title {
+    //         margin-left: 0;
+    //         margin-bottom: 0.5rem;
+    //         justify-content: center;
 
-            p {
-                text-align: center;
-            }
-        }
+    //         p {
+    //             text-align: center;
+    //         }
+    //     }
 
-        nav {
-            ul {
-                margin-right: 0;
-                justify-content: space-around;
-                padding-left: 0;
-            }
-        }
-    }
+    //     nav {
+    //         ul {
+    //             margin-right: 0;
+    //             justify-content: space-around;
+    //             padding-left: 0;
+    //         }
+    //     }
+    // }
 
     body {
         section.main {
@@ -412,7 +392,8 @@ footer {
 
             div.cards {
                 div.card {
-                    max-width: 247px;
+                    
+                    max-width: 230px;
                     h2 {
                         font-size: 1rem;
                         margin-bottom: 0;
@@ -426,7 +407,11 @@ footer {
                         height: 150px;
                     }
                     div.text{
-                        min-height: 260px;
+                        min-height: 240px;
+                        p{
+                            font-size: 0.75rem;
+                        }
+                       
                     }
                 }
             }
@@ -438,22 +423,22 @@ footer {
 }
 
 @media screen and (max-width:736px) {
-    header {
-        position: static;
+    // header {
+    //     position: static;
 
-        div.job_title {
-            p {
-                padding: 0.5rem;
-                text-align: center;
-            }
-        }
+    //     div.job_title {
+    //         p {
+    //             padding: 0.5rem;
+    //             text-align: center;
+    //         }
+    //     }
 
-        nav {
-            ul {
-                flex-direction: column;
-            }
-        }
-    }
+    //     nav {
+    //         ul {
+    //             flex-direction: column;
+    //         }
+    //     }
+    // }
 
     body {
         section.main {
@@ -548,6 +533,7 @@ footer {
 
             p {
                 font-size: 0.75rem;
+                margin: 0;
             }
 
         }

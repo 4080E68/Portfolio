@@ -1,5 +1,6 @@
 let add = document.querySelector("form button");
 let section = document.querySelector("section");
+
 add.addEventListener("click", (e) => {
   e.preventDefault(); //讓表單不會送出
   console.log(e);
