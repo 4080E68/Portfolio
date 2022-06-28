@@ -3,13 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     object-fit: cover;
 }
-hr{
+
+hr {
     margin: 0;
     background-color: rgb(175, 175, 175);
 }
+
 // .active {
 //     background-color: black;
 // }
@@ -87,7 +90,8 @@ body {
                     text-align: center;
                     margin-bottom: 1rem;
                 }
-                label{
+
+                label {
                     font-size: 1.25rem;
                 }
 
@@ -166,8 +170,8 @@ main {
                 }
 
                 button {
-                    
-                    
+
+
                     background-color: #0d6efd;
                     border: none;
                     width: 130px;
@@ -181,7 +185,7 @@ main {
                         text-decoration: none;
                         font-size: 1rem;
                         color: white;
-                        
+
 
 
                     }
@@ -215,10 +219,10 @@ main {
         div.cards {
             display: flex;
             flex-wrap: wrap;
-           
-            
 
-            
+
+
+
 
             div.card {
                 display: flex;
@@ -240,7 +244,7 @@ main {
                 img {
                     width: 100%;
                     height: 15vw;
-                    
+
                 }
 
                 h2 {
@@ -317,6 +321,27 @@ footer {
 
 }
 
+@media screen and (max-width:1610px) {
+    main {
+
+
+        section.data {
+
+
+
+
+            div.cards {
+                padding-left: 2.5rem;
+
+
+            }
+        }
+
+
+    }
+
+}
+
 @media screen and (max-width:1148px) {
     // header {
     //     div.job_title {
@@ -387,17 +412,19 @@ footer {
 
         section.data {
             width: 100%;
-            
+
 
             section.end {
                 width: 80%;
             }
 
             div.cards {
-                
+                padding-left: 0rem;
+
                 div.card {
-                    
+
                     max-width: 250px;
+
                     h2 {
                         font-size: 1rem;
                         margin-bottom: 0;
@@ -410,12 +437,14 @@ footer {
                     img {
                         height: 150px;
                     }
-                    div.text{
+
+                    div.text {
                         min-height: 240px;
-                        p{
+
+                        p {
                             font-size: 0.75rem;
                         }
-                       
+
                     }
                 }
             }
@@ -511,7 +540,7 @@ footer {
             }
 
             div.cards {
-                
+
                 div.card {
                     h2 {
                         font-size: 1.25rem;

@@ -324,6 +324,12 @@ footer div.statement p {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1610px) {
+  main section.data div.cards {
+    padding-left: 2.5rem;
+  }
+}
+
 @media screen and (max-width: 1148px) {
   body section.main section.contact {
     width: 80%;
@@ -360,6 +366,9 @@ footer div.statement p {
   }
   main section.data section.end {
     width: 80%;
+  }
+  main section.data div.cards {
+    padding-left: 0rem;
   }
   main section.data div.cards div.card {
     max-width: 250px;

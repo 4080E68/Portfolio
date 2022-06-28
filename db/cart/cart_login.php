@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon/online-shopping.png">
     <title>購物車 | 登入</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -29,8 +30,8 @@
         $_SESSION['identity'] = 1;
 
         echo "<script>alert('登出成功!!')</script>";
-        echo "<script>window.location.href='./cart_list.php';</script>";
-       
+        echo "<script>window.location.href='./cart_index.php';</script>";
+
         //echo $op . '登出成功<a href="../index.html">按此離開</a>';
         die('');
     }
@@ -45,7 +46,7 @@
     if ($num == 1) {
         $_SESSION['login'] = 1;
         $_SESSION['id'] = $id;
-        
+
         //echo $op . '認證成功<a href="../index.html"> 按此離開 </a>';
         for ($i = 0; $i < $num; $i = $i + 1) {
             $identity = $A[$i]['identity']; //取得權限
@@ -53,8 +54,8 @@
         }
         $_SESSION['identity'] = $identity; //存取權限
         echo "<script>alert('登入成功')</script>";
-        echo "<script>window.location.href='./cart_list.php';</script>";
-        //header('location: ./cart_list.php');
+        echo "<script>window.location.href='./cart_index.php';</script>";
+        //header('location: ./cart_index.php');
     } else {
         $_SESSION['login'] = 0;
         $_SESSION['id'] = '';
@@ -62,7 +63,7 @@
         echo "<script>alert('帳號或密碼錯誤!!')</script>";
         echo "<script>window.location.href='./cart_login.html';</script>";
     }
-    
+
 
     ?>
 

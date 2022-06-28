@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>psql上架結果</title>
+    <title>上架結果</title>
+    <link rel="icon" href="./icon/online-shopping.png">
 </head>
 
 <body>
-    <h3>psql上架結果</h3>
+    <h3>上架結果</h3>
     <?php
 
     //認證
@@ -41,7 +42,7 @@
     //echo $A[0]['Commodity_id'];
     echo '<br/>';
     echo "<script>alert('上架成功!!')</script>";
-    echo "<script>window.location.href='./cart_list.php';</script>";
+    echo "<script>window.location.href='./cart_index.php';</script>";
 
     ?>
 </body>

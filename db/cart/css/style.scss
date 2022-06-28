@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
 header {
     nav {
 
@@ -5,11 +11,8 @@ header {
         z-index: 3;
 
 
-        button {
-            a {
-                text-decoration: none;
-                color: white;
-            }
+        a {
+            
 
             a:hover {
                 text-decoration: none;
