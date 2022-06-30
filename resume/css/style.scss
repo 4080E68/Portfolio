@@ -172,7 +172,7 @@ main {
 
             div.personal {
                 width: 90%;
-                padding: 2rem;
+                padding: 1rem 2rem;
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -190,7 +190,7 @@ main {
             }
 
             ul {
-                padding: 2rem;
+                padding: 1rem 2rem;
 
                 li {
                     list-style-type: none;
@@ -224,7 +224,7 @@ main {
 
                 div.exp {
                     flex: 1 1 420px;
-                    padding: 2rem;
+                    padding: 1rem 2rem;
 
                     h2 {
                         font-size: 1.65rem;
@@ -288,6 +288,8 @@ main {
                 hr {
                     margin-bottom: 1rem;
                 }
+
+                
 
 
                 div.skdata {
@@ -542,7 +544,7 @@ footer {
 
                 div.text1 {
                     p {
-                        font-size: 1.15rem;
+                        font-size: 1rem;
                     }
 
                     img {
@@ -596,6 +598,7 @@ footer {
 
                     div.exp {
                         flex: 1 1 200px;
+                        
 
                         h2 {
                             text-align: center;
@@ -609,9 +612,11 @@ footer {
 
                         ol {
                             padding-left: 2rem;
+                            
 
                             li {
                                 font-size: 0.95rem;
+                                
                             }
                         }
 
